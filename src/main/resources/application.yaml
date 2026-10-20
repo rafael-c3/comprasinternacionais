@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: comprasinternacionais
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/compras_db?createDatabaseIfNotExist=true
+    username: root
+    password: rafael
+  jpa:
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+
+integrations:
+  awesomeapi:
+    url: https://economia.awesomeapi.com.br
